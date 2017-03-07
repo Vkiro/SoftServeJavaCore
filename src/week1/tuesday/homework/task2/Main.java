@@ -4,6 +4,12 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/**
+ * Define string variable name and integer value age.
+ * Output question "What is your name?"
+ * Read the value name and output next question: “Where are you live, (name)?".
+ * Read address and write whole information.
+ */
 public class Main {
     public static void main(String[] args) throws IOException {
         String name;

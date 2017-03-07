@@ -4,6 +4,12 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/**
+ * Phone calls from three different countries are с1, с2 and с3 standard units per minute.
+ * Talks continued t1, t2 and t3 minutes.
+ * How much computer will count for each call separately and all talk together?
+ * Input all source data from console, make calculations and output to the screen.
+ */
 public class Main {
     public static void main(String[] args) throws IOException {
         int c1, c2, c3;

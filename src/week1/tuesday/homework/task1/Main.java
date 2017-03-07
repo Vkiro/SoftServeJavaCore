@@ -4,6 +4,11 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/**
+ * Flower bed is shaped like a circle.
+ * Calculate the perimeter and area by entering the radius.
+ * Output obtained results.
+ */
 public class Main {
     public static void main(String[] args) throws IOException {
         double radius;
