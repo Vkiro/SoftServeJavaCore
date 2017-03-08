@@ -1,20 +1,33 @@
 package week2.tuesday.lecture;
 
+/**
+ * Create Console Application project in Java.
+ * Add class Student to the project.
+ * Class Student should consists of two private fields:
+ * - name;
+ * - rating.
+ * Add:
+ * - properties for access to these fields;
+ * - static field avgRating – average rating of all students;
+ * - default constructor and constructor with parameters.
+ * Methods:
+ * - betterStudent - to definite the better student (between two, return true or false);
+ * - toString - to output information about student;
+ * - changeRating - to change the rating of student.
+ */
 public class Student {
     private String name;
-    private int rait;
-    private static int avgRating;
+    int rating;
+    private static int number = 0;
+    private static int sum = 0;
 
     public Student() {
+        number++;
     }
 
-    public Student (String name) {
-        setName(name);
-    }
-
-    public Student(String name, int rait) {
+    public Student(String name) {
         this.name = name;
-        this.rait = rait;
+        number++;
     }
 
     public String getName() {
@@ -25,22 +38,29 @@ public class Student {
         this.name = name;
     }
 
-    public int getRait() {
-        return rait;
+    public double getRating() {
+        return rating;
     }
 
-    public void setRait(int rait) {
-        this.rait = rait;
+    public void setRating(int rating) {
+        this.rating = rating;
+        sum += rating;
     }
 
-    public boolean betterStudent(Student st) {
-        return this.rait > st.getRait();
+    public static double getAvgRating() {
+        return (double) sum / number;
+    }
+
+    public boolean betterStudent(Student student) {
+        return this.getRating() > student.getRating();
+    }
+
+    public void changeRating(int rating) {
+        this.rating = rating;
     }
 
     @Override
     public String toString() {
-        return "Student: " +
-                "name=" + name +
-                ", rait=" + rait;
+        return "Student [name=" + name + ", rating=" + rating + "]";
     }
 }

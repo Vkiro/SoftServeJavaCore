@@ -1,20 +1,28 @@
 package week2.tuesday.lecture;
 
+/**
+ * In the method main() create 3 objects of Student type and input information about them.
+ * Display the average and total rating of all student.
+ */
 public class Appl {
     public static void main(String[] args) {
-        Student st1 = new Student();
-        st1.setName("Name1");
-        st1.setRait(1);
+        Student student1 = new Student("Oleg");
+        student1.setRating(4);
+        Student student2 = new Student("Anna");
+        student2.setRating(5);
+        Student student3 = new Student();
+        student3.setName("Mary");
+        student3.setRating(4);
 
-        Student st2 = new Student("Name2");
-        st1.setRait(4);
-
-        Student st3 = new Student("Name3", 4);
-
-        System.out.println(st1);
-        System.out.println(st2);
-        System.out.println(st3);
-
-        System.out.println(st1.betterStudent(st3));
+        System.out.println("Out students");
+        System.out.println(student1);
+        System.out.println(student2);
+        System.out.println(student3);
+        System.out.println();
+        System.out.print("Student 1 has better rating than student2 ");
+        System.out.println(student1.betterStudent(student2));
+        System.out.println();
+        System.out.printf("Average rating is " + "%.2f", Student.getAvgRating());
     }
 }
+
