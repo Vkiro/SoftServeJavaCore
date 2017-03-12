@@ -3,8 +3,6 @@ package week2.thursday.homework.tests.task1.c;
 import org.junit.Test;
 import week2.thursday.homework.task1.c.Main;
 
-import static org.junit.Assert.*;
-
 public class MainTest {
     @Test
     public void testGetErrorInformationByCorrectId() {
