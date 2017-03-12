@@ -25,5 +25,4 @@ public class MainTest {
         assertTrue(Main.min(2, 3, 1) == 1);
         assertTrue(Main.min(2, 1, 3) == 1);
     }
-
 }

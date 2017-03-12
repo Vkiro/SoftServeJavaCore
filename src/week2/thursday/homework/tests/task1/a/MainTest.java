@@ -15,5 +15,4 @@ public class MainTest {
     public void isInMaxRangeTest() {
         assertTrue(Main.isInRange(5.0f));
     }
-
 }
