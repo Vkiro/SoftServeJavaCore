@@ -22,6 +22,4 @@ public class MainTest {
         assertTrue(Main.getTheOldestDog(new Dog(3), new Dog(2), new Dog(1)).getAge() == 3);
         assertTrue(Main.getTheOldestDog(new Dog(3), new Dog(1), new Dog(2)).getAge() == 3);
     }
-
-
 }
