@@ -16,7 +16,7 @@ public class Main {
         System.out.print("Enter the name of the country: ");
         String countryName = reader.readLine().toUpperCase();
 
-        System.out.print("The continent is : ");
+        System.out.print("The continent is: ");
         System.out.println(map.get(Country.valueOf(countryName)));
     }
 
